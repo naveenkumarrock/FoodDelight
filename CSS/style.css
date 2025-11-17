@@ -1,0 +1,20 @@
+.hero {
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 650px;
+    background: rgba(0,0,0,0.45);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.carousel-item {
+    height: 75vh;
+}

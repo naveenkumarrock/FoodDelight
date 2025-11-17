@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — FoodDelight</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">FoodDelight</a>
+      </div>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-4">Get in Touch With Us</h2>
+        <p class="text-center text-muted mb-5">
+          We’re here to help! Whether you have a question, complaint, or
+          feedback — reach out anytime.
+        </p>
+
+        <div class="row g-4">
+          <!-- Contact Information Card -->
+          <div class="col-lg-4">
+            <div class="shadow p-4 rounded bg-white h-100">
+              <h4 class="fw-bold mb-3">Contact Information</h4>
+              <p class="text-muted mb-4">
+                Feel free to contact us through the details below.
+              </p>
+
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-geo-alt fs-3 text-danger me-3"></i>
+                <div>
+                  <h6 class="fw-semibold">Our Location</h6>
+                  <p class="text-muted">FoodDelight HQ, Hyderabad, India</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-telephone fs-3 text-primary me-3"></i>
+                <div>
+                  <h6 class="fw-semibold">Phone Number</h6>
+                  <p class="text-muted">+91 99999 88888</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-envelope fs-3 text-success me-3"></i>
+                <div>
+                  <h6 class="fw-semibold">Email Address</h6>
+                  <p class="text-muted">support@fooddelight.com</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-clock fs-3 text-warning me-3"></i>
+                <div>
+                  <h6 class="fw-semibold">Working Hours</h6>
+                  <p class="text-muted">Mon – Sun (24/7 Available)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-8">
+            <div class="shadow p-4 rounded bg-white">
+              <h4 class="fw-bold mb-3">Send Us a Message</h4>
+
+              <form action="https://formspree.io/f/xovyzvdn" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control form-control-lg"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      name="_replyto"
+                      class="form-control form-control-lg"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    name="message"
+                    rows="6"
+                    class="form-control form-control-lg"
+                    required
+                  ></textarea>
+                </div>
+
+                <button class="btn btn-primary btn-lg w-100">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="mt-5">
+      <div class="container">
+        <h3 class="fw-bold text-center mb-3">Find Us on Map</h3>
+        <p class="text-center text-muted mb-4">
+          Visit our office or contact us for more information.
+        </p>
+
+        <div class="shadow rounded overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7550563719193!2d78.38745137493529!3d17.42125560352217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93fdde3e3bf1%3A0xf068591e6cd98116!2sHyderabad%20City!5e0!3m2!1sen!2sin!4v1708365574031"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 bg-dark text-center text-white mt-5">
+      <p>© <span id="year3"></span> FoodDelight — All Rights Reserved</p>
+    </footer>
+
+    <script>
+      document.getElementById("year3").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
